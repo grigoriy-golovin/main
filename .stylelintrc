@@ -1,0 +1,8 @@
+{
+  "extends": "stylelint-config-htmlacademy",
+
+  "rules": {
+  	"indentation": "spaces",
+    "declaration-no-important": true
+  }
+}
