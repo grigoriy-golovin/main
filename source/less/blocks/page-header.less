@@ -1,8 +1,7 @@
 .page-header {
-
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 47px;
+	margin-bottom: 10px;
 }
 
 .page-header__but-menu {
@@ -76,56 +75,19 @@
 	display: block;
 }
 
-.page-header__title {
-	order: 3;
-	display: block;
-	width: 150px;
-	margin: 0 auto;
-	margin-top: -13px;
-	margin-bottom: 29px;
-	font-family: "Playfair Display", serif;
-	font-style: normal;
-	font-weight: 900;
-	font-stretch: 125%;
-	font-size: 25px;
-	line-height: 38px;
-	text-align: center;
-	letter-spacing: 1px;
-	color: black;
-}
-
-.page-header__article-list {
-	order: 4;
-	margin: 0 auto;
-}
 
 @media (min-width: @desktop-width) {
 	.page-header {
-		margin-bottom: 95px;
+		border-bottom: 1px solid @lightgrey;
 	}
 
 	.page-header__but-menu {
 		display: none;
 	}
 
-	.page-header__title {
-		order: 1;
-		width: 347px;
-		font-size: 35px;
-		line-height: 47px;
-		margin-top: 60px;
-    margin-bottom: 46px;
-
-	}
-
 	.page-header__menu {
-		order: 2;
 		margin: 0 auto;
 		margin-bottom: 9px;
 	}
 
-	.page-header__article-list {
-		order: 3;
-
-	}
 }

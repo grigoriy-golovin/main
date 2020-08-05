@@ -4,25 +4,25 @@ var cardData = [
 {
 imgSrc: "img/sis-cities.png",
 imgAlt: "sis-cities",
-text: "SPA на React и Redux",
+text: "Sis cities",
 link: "https://grigoriy-golovin.github.io/six-cities",
 },
 {
 imgSrc: "img/pixiel-hanter.png" ,
-imgAlt: "sis-cities",
-text: "Сайт - игра написанная на современном синтаксисе JS (ECMAScript 2015+) по паттерну MVP без framework. romvromevombwp,v0re0o,vpa,eca[e,p mp mpf ,f of k0 v, ro k poo k k0ok0ok pkr rkrwo",
+imgAlt: "pixiel-hanter",
+text: "Pixiel hanter",
 link: "https://grigoriy-golovin.github.io/pixel-hunter",
 },
 {
 imgSrc: "img/keksobooking.png",
 imgAlt: "Keksbooking",
-text: "Простой сайт на старом синтаксисе JS. ",
+text: "Keksbooking",
 link: "https://grigoriy-golovin.github.io/Keksbooking",
 },
 {
 imgSrc: "img/culture-news.png",
 imgAlt: "culture-news",
-text: "Сайт с гридами в разметке",
+text: "Culture news",
 link: "https://grigoriy-golovin.github.io/culture-news",
 }
 ]

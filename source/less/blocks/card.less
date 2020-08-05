@@ -1,16 +1,16 @@
 .card {
   display: block;
-  width: 270px;
-  // box-shadow: 0 0 4px 3px @lightgrey;
+
+  box-shadow: 4px 4px 4px 3px @lightgrey;
   border-radius: 2px;
 
   &:hover {
-    box-shadow: 0 0 4px 3px @darkgrey;
+    box-shadow: 4px 4px 4px 3px @darkgrey;
   }
 }
 
 .card__img-wrapper {
-  width: 270px;
+  width: 100%;
   height: 145px;
   overflow: hidden;
 }
@@ -23,9 +23,9 @@
 }
 
 .card__text {
-  display: block;
-  white-space: nowrap;
-  height: 50px;
+  padding: 0 10px;
+  margin: 0;
+  font-size: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
 }

@@ -9,7 +9,6 @@
 </head>
     <body>
       <header class="page-header">
-        <h1 class="page-header__title">Григорий Головин</h1>
         <button
           class="page-header__but-menu page-header__but-menu--open page-header__but-menu--no-js"
         ></button>
@@ -17,13 +16,16 @@
           class="page-header__menu page-header__menu--close page-header__menu--no-js site-list"
         >
           <li class="site-list__item">
-            <a href="#" class="site-list__link">Контакты</a>
+            <a href="#contacts" class="site-list__link">Контакты</a>
           </li>
           <li class="site-list__item">
             <a href="#" class="site-list__link">Навыки</a>
           </li>
           <li class="site-list__item">
-            <a href="#" class="site-list__link">Опыт</a>
+            <a href="#portfolio" class="site-list__link">Портфолио</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">Опыт работы</a>
           </li>
           <li class="site-list__item">
             <a href="#" class="site-list__link">Образование</a>
@@ -32,8 +34,11 @@
       </header>
         <main>
             <h1 class="visually-hidden">Григорий Головин - личный сайт</h1>
-            <section>
-                <div>
+            <section class="contacts" id="contacts">
+                <div class="contacts__photo-wrapper">
+                  <img class="contacts__photo" src="img/grigoriy-golovin.jpg" alt="моё фото" width="270px">
+                </div>
+                <div class="contacts__description">
                     <h2>Григорий Головин</h2>
                     <p>Здравствуйте, я Frontend Developer. Имею опыт разработки сайтов различной сложности от лендинга до SPA на React. Хочу работать и развиваться в разработке клиентских приложений.</p>
                     <div>
