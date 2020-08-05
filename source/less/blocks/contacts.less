@@ -1,21 +1,25 @@
 .contacts {
   display: flex;
+  flex-direction: column;
   margin: 0;
 }
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    flex-direction: row;
+  }
 
+  .contacts__description-wrapper {
+    margin-left: 40px;
+  }
 
 }
 
 @media (min-width: @desktop-width) {
+
   .contacts {
-    display: flex;
     margin: 0 40px;
   }
 
-  .contacts__description {
-    margin-left: 40px;
-  }
 
 }
