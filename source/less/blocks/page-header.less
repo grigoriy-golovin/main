@@ -1,0 +1,131 @@
+.page-header {
+
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 47px;
+}
+
+.page-header__but-menu {
+	order: 1;
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	box-sizing: border-box;
+	display: block;
+	appearance: none;
+	border: none;
+	position: relative;
+
+}
+
+.page-header__but-menu--open {
+	background-color: @lightgreen;
+		&:after {
+			position: absolute;
+			content: "";
+			width: 22.5px;
+			height: 2.5px;
+			left: 13.75px;
+			top: 17.5px;
+			background: #DADADA;
+			box-shadow: 0 6px 0 0 #DADADA, 0 12px 0 0 #DADADA;
+		}
+}
+
+.page-header__but-menu--close {
+	margin-right: 0;
+	margin-left: auto;
+	background-color: @white;
+	outline: 1px solid block;
+	 	&::before,
+	  &::after {
+	    content: " ";
+	    position: absolute;
+	    top: 31px;
+	    right: 11px;
+	    width: 40px;
+	    height: 2px;
+	    background-color: #D7D9DF;
+	  }
+
+	  &::before {
+	    transform: rotate(45deg);
+	  }
+
+	  &::after {
+	    transform: rotate(-45deg);
+	  }
+}
+
+.page-header__but-menu--no-js {
+	display: none;
+}
+
+.page-header__menu {
+	order: 2;
+	margin: 0;
+  margin-top: 26px;
+  margin-bottom: 10px;
+}
+
+.page-header__menu--close {
+	display: none;
+}
+
+.page-header__menu--no-js {
+	display: block;
+}
+
+.page-header__title {
+	order: 3;
+	display: block;
+	width: 150px;
+	margin: 0 auto;
+	margin-top: -13px;
+	margin-bottom: 29px;
+	font-family: "Playfair Display", serif;
+	font-style: normal;
+	font-weight: 900;
+	font-stretch: 125%;
+	font-size: 25px;
+	line-height: 38px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: black;
+}
+
+.page-header__article-list {
+	order: 4;
+	margin: 0 auto;
+}
+
+@media (min-width: @desktop-width) {
+	.page-header {
+		margin-bottom: 95px;
+	}
+
+	.page-header__but-menu {
+		display: none;
+	}
+
+	.page-header__title {
+		order: 1;
+		width: 347px;
+		font-size: 35px;
+		line-height: 47px;
+		margin-top: 60px;
+    margin-bottom: 46px;
+
+	}
+
+	.page-header__menu {
+		order: 2;
+		margin: 0 auto;
+		margin-bottom: 9px;
+	}
+
+	.page-header__article-list {
+		order: 3;
+
+	}
+}

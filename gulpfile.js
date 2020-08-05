@@ -54,16 +54,7 @@ gulp.task("css", function () {
 
  gulp.task("js", function () {
   return gulp.src("source/js/*.js")
-    .pipe(eslint())
-    .pipe(eslint.format())
-    .pipe(sourcemap.init())
-    .pipe(babel({
-      presets: ['@babel/env']
-    }))
-    .pipe(terser())
-    .pipe(sourcemap.write())
-    .pipe(rename({ suffix: ".min" }))
-    .pipe(gulp.dest("build/js"))
+   .pipe(gulp.dest("build/js"))
 });
 
 gulp.task("images", function () {

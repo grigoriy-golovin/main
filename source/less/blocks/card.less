@@ -1,7 +1,44 @@
 .card {
-  width: auto;
+  display: block;
+  width: 270px;
+  // box-shadow: 0 0 4px 3px @lightgrey;
+  border-radius: 2px;
+
+  &:hover {
+    box-shadow: 0 0 4px 3px @darkgrey;
+  }
+}
+
+.card__img-wrapper {
+  width: 270px;
+  height: 145px;
+  overflow: hidden;
 }
 
 .card__img {
   width: 100%;
+  // border-radius: 2px;
+  display: block;
+  margin: 0 auto;
+}
+
+.card__text {
+  display: block;
+  white-space: nowrap;
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__link {
+  width: 150px;
+  display: block;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  color: black;
+  background-color: @lightgreen;
+  text-decoration: none;
+
 }

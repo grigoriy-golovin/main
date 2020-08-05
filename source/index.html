@@ -4,10 +4,32 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Григорий Головин</title>
-		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 </head>
     <body>
-        <header></header>
+      <header class="page-header">
+        <h1 class="page-header__title">Григорий Головин</h1>
+        <button
+          class="page-header__but-menu page-header__but-menu--open page-header__but-menu--no-js"
+        ></button>
+        <ul
+          class="page-header__menu page-header__menu--close page-header__menu--no-js site-list"
+        >
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">Контакты</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">Навыки</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">Опыт</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">Образование</a>
+          </li>
+        </ul>
+      </header>
         <main>
             <h1 class="visually-hidden">Григорий Головин - личный сайт</h1>
             <section>
@@ -29,39 +51,24 @@
                     </div>
                 </div>
             </section>
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <h2 class="portfolio__title">Портфолио</h2>
                 <ul class="portfolio__list">
-                    <li class="portfolio__item card">
-                        <img class="card__img" src="img/sis-cities.png" alt="sis-cities" width="150">
-                        <p class="card__text">SPA на React и Redux.</p>
-                        <a class="card__link" href="https://grigoriy-golovin.github.io/six-cities">перейти на сайт</a>
-                    </li>
-                    <li class="portfolio__item card">
-                        <img class="card__img" src="img/pixiel-hanter.png" alt="sis-cities" width="150">
-                        <p class="card__text">Сайт - игра написанная на современном синтаксисе JS (ECMAScript 6) по паттерну MVP без framework.</p>
-                        <a class="card__link" href="https://grigoriy-golovin.github.io/pixel-hunter">перейти на сайт</a>
-                    </li>
-                    <li class="portfolio__item card">
-                        <img class="card__img" src="img/keksobooking.png" alt="Keksbooking" width="150">
-                        <p class="card__text">Простой сайт на старом синтаксисе JS (ECMAScript 5)</p>
-                        <a class="card__link" href="https://grigoriy-golovin.github.io/Keksbooking">перейти на сайт</a>
-                    </li>
-                    <li class="portfolio__item card">
-                        <img class="card__img" src="img/culture-news.png" alt="culture-news" width="150">
-                        <p class="card__text">Сайт с гридами в разметке</p>
-                        <a class="card__link" href="https://grigoriy-golovin.github.io/culture-news">перейти на сайт</a>
-                    </li>
+
                 </ul>
             </section>
         </main>
         <footer></footer>
+        <template>
+          <li class="portfolio__item card">
+            <div class="card__img-wrapper">
+              <img class="card__img" src="" alt="" width="150">
+            </div>
+              <p class="card__text"></p>
+              <a class="card__link" href="">Перейти на сайт</a>
+          </li>
+        </template>
+        <script type="text/javascript" src="js/template.js"></script>
     </body>
 </html>
-<!--
-<a href="https://grigoriy-golovin.github.io/culture-news">перейти на сайт</a>
-<a href="https://grigoriy-golovin.github.io/Keksbooking">перейти на сайт</a>
-<a href="https://grigoriy-golovin.github.io/pink">перейти на сайт</a>
-<a href="https://grigoriy-golovin.github.io/light">перейти на сайт</a>
-<a href="https://grigoriy-golovin.github.io/pixel-hunter">перейти на сайт</a>
--->
+
