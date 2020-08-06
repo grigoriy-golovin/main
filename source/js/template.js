@@ -24,7 +24,19 @@ imgSrc: "img/culture-news.png",
 imgAlt: "culture-news",
 text: "Culture news",
 link: "https://grigoriy-golovin.github.io/culture-news",
-}
+},
+{
+	imgSrc: "img/pink.png",
+	imgAlt: "pink",
+	text: "Pink",
+	link: "https://grigoriy-golovin.github.io/pink",
+	},
+	{
+		imgSrc: "img/light.png",
+		imgAlt: "light",
+		text: "Light",
+		link: "https://grigoriy-golovin.github.io/light",
+		},
 ]
 
 var cardInsert = document.querySelector(".portfolio__list");

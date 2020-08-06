@@ -6,12 +6,11 @@
 //       format("woff2")
 // }
 
-
 body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 14px;
   line-height: 2;
   font-weight: normal;
@@ -30,8 +29,18 @@ body {
   overflow: hidden;
 }
 
-// img {
-//   width: 100% !important;
-//   height: auto !important;
-// }
+main {
+  padding: 0 10px;
+}
 
+@media (min-width: @tablet-width) {
+  main {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  main {
+    padding: 0 40px;
+  }
+}
