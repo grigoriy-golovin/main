@@ -30,8 +30,13 @@ var cardData = [
     imgAlt: "Keksbooking",
     title: "Keksbooking",
     link: "https://grigoriy-golovin.github.io/Keksbooking",
-    description: "",
-    techno: "",
+    description: `Сервис размещения объявлений об аренде
+     недвижимости в Токио. Пользователи делятся информацией
+     о своём объекте недвижимости, размещают фотографии, указывают
+     адрес, перемещая метку по карте города. Кроме этого, можно
+      посмотреть на объявления,
+     размещённые другими пользователями.`,
+    techno: "DOM API, XMLHttpRequest, ",
   },
   {
     imgSrc: "img/culture-news.png",
@@ -73,15 +78,15 @@ var createSlid = function (data, template) {
   slid.querySelector(".card__description").textContent = data.description;
   slid.querySelector(".card__text-techno").textContent = data.techno;
   slid.querySelector(".card__link--site").href = data.link;
-	slid.querySelector(".card__link--code").href = data.linkCode;
+  slid.querySelector(".card__link--code").href = data.linkCode;
 
-	slid.querySelector("img").onclick = (() => {
-		slid.classList.add(`card--active`)
-	});
+  slid.querySelector("img").onclick = () => {
+    slid.classList.add(`card--active`);
+  };
 
-	slid.querySelector(".card__but-close").onclick = (() => {
-		slid.classList.remove(`card--active`)
-	});
+  slid.querySelector(".card__but-close").onclick = () => {
+    slid.classList.remove(`card--active`);
+  };
 
   return slid;
 };
@@ -89,4 +94,3 @@ var createSlid = function (data, template) {
 cardData.forEach((element) => {
   cardInsert.append(createSlid(element, templateCard));
 });
-
