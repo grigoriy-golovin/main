@@ -22,7 +22,7 @@
   margin: 0 auto;
 }
 
-.card__text {
+.card__title {
   padding: 0 10px;
   margin: 0;
   font-size: 20px;
@@ -30,8 +30,12 @@
   text-overflow: ellipsis;
 }
 
+.card__link-wrapper {
+  display: flex;
+}
+
 .card__link {
-  width: 150px;
+  width: auto;
   display: block;
   font-size: 15px;
   padding: 10px;
@@ -40,5 +44,10 @@
   color: black;
   background-color: @lightgreen;
   text-decoration: none;
+  box-shadow: 2px 2px 2px 3px @lightgrey;// доделать
+}
+
+.card__link--code {
+  background-color: @lightgrey;
 
 }

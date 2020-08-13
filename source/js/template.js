@@ -48,7 +48,7 @@ var createSlid = function (data, template) {
 	var slid = template.cloneNode(true);
 	slid.querySelector("img").src = data.imgSrc;
 	slid.querySelector("img").alt = data.imgAlt;
-	slid.querySelector(".card__text").textContent = data.text;
+	slid.querySelector(".card__title").textContent = data.text;
 	slid.querySelector(".card__link").href = data.link;
 		return slid;
 };
