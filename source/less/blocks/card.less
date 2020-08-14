@@ -15,13 +15,21 @@
   width: 100%;
   height: 145px;
   overflow: hidden;
+  padding: 0;
+	box-sizing: border-box;
+	display: block;
+	appearance: none;
+	border: none;
 }
 
 .card__img {
   width: 100%;
-  // border-radius: 2px;
   display: block;
   margin: 0 auto;
+   &:hover {
+     transform: scale( 1.2);
+     transition: ease 0.5s;
+   }
 }
 
 .card__title {
@@ -34,6 +42,7 @@
 
 .card__link-wrapper {
   display: flex;
+  justify-content: space-around;
 }
 
 .card__link {
@@ -42,11 +51,15 @@
   font-size: 15px;
   padding: 10px;
   text-align: center;
-  margin: 20px auto;
+  margin: 20px 5px;
   color: black;
   background-color: @lightgreen;
   text-decoration: none;
   box-shadow: 2px 2px 3px 0px @darkgrey;
+   :hover,:active,:focus {
+    box-shadow: none;
+    opacity: 0.9;
+   }
 }
 
 .card__link--code {
@@ -59,15 +72,32 @@
 }
 
 .card--active {
+  z-index: 10;
   position: fixed;
   width: 80vw;
   max-height: 80vh;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
   overflow-y: auto;
 
+
+  box-shadow: none;
+  &:hover {
+    box-shadow: none;
+    //box-shadow: 0 0 70px 500px @darkgrey;
+  }
+
+  .card__img {
+
+     &:hover {
+       transform: none;
+     }
+  }
+
+  .card__link-wrapper {
+   justify-content: flex-start;
+  }
 
   .card__img-wrapper {
     height: 50%;
@@ -79,7 +109,6 @@
   }
 
   .card__but-close {
-    order: 1;
     width: 50px;
     height: 50px;
     padding: 0;
@@ -113,4 +142,18 @@
       transform: rotate(-45deg);
     }
   }
+}
+
+.card__bg-black {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card__bg-black--active {
+  display: block;
 }
